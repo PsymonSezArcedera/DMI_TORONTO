@@ -1,0 +1,81 @@
+/* General styling for the contact page */
+.contact-page {
+    display: flex;
+    flex-direction: row;  /* Ensure the sections are side by side */
+    justify-content: center;  /* Center the child elements horizontally */
+    gap: 20px;  /* Adjusts the space between the left and right columns */
+    padding-top: 250px;
+    padding-bottom: 50px;
+  }
+  
+  .contact-page .top-rectangle {
+    width: 100%;  /* Full width */
+    height: 200px;  /* Adjust the height of the rectangle */
+    background-color: #345766;  /* Blue color, change to whatever you want */
+    position: absolute;  /* Positioning it at the top */
+    top: 0;  /* Attach it to the top of the page */
+    left: 0;  /* Ensure it spans the full width */
+  }
+  
+  .contact-left, .contact-right {
+    background-color: #fff;
+    padding: 30px;
+    flex: 1;
+    max-width: 500px;  /* Optional: Limits the width of each section */
+    border-radius: 8px;
+  }
+  
+  .contact-left {
+    margin-right: 10px;  /* Optional: Adds a small space between the left and right sections */
+  }
+  
+  .contact-right {
+    margin-left: 10px;   /* Optional: Adds a small space between the left and right sections */
+  }
+
+
+  /* Bold all h1, h2, and other headings */
+  .contact-page h1,
+  .contact-page h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight:700;  /* Bold */
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  .contact-info h2 {
+    font-size: 16px;  
+    margin-bottom: 0; /* Reduce space between h2 and p */
+    padding-left: 10px;
+  }
+  
+  .contact-page p {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    margin-top: 0;  /* Remove margin on top of p */
+    margin-bottom: 20px;  /* Adjust bottom margin as needed */
+    padding-left: 10px;
+  }
+
+  
+  .contact-info a {
+    color: #000000;  /* Soft blue for links */
+    text-decoration: none;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .contact-page {
+      flex-direction: column;  /* Stack sections vertically */
+      padding: 20px;
+    }
+  
+    .contact-left, .contact-right {
+      flex: none;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  }
+  
