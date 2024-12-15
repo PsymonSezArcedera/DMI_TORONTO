@@ -1,4 +1,4 @@
-function Sample() {
+function Component() {
     return (
         <>
         <h1>DMI Toronto</h1>
@@ -7,4 +7,4 @@ function Sample() {
     )
 }
 
-export default Sample
+export default Component

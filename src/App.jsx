@@ -1,10 +1,10 @@
-import Sample from '/src/components/Sample';
+import Page from '/src/pages/Sample';
 import './App.css'
 
 function App() {
   return (
     <>
-      <Sample/>
+      <Page/>
     </>
   )
 }
