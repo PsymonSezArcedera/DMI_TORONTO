@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px;
+  }
