@@ -1,17 +1,10 @@
-import Footer from '/src/components/Footer';
-import Page from '/src/pages/Sample';
-import Contact from '/src/pages/Contact'
+import Root from './pages/Root';
 
 import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <div className="main-content">
-        <Contact />
-      </div>
-      <Footer />
-    </div>
+    <Root />
   );
 }
 
