@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px;
     color: white;
+    background-color: white;
   }
   
   .logo {
@@ -11,8 +12,8 @@
   }
   
   .nav a {
-    color: white;
-    font-weight: 700;
+    color: rgba(1, 62, 94, 1);
+    font-weight: 10;
     text-decoration: none;
     margin: 0 20px;
     padding: 10px;

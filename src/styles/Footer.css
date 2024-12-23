@@ -1,50 +1,74 @@
 /* Footer styles */
 .footer {
-    background-color: #000;
-    color: #fff;
-    text-align: left;
-    padding: 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-    width: 100vw; /* Ensure it takes the full width of the viewport */
-    position: relative;  /* Keeps footer within content flow */
-    left: 0; /* Aligns it to the left edge */
-    bottom: 0; /* Push it to the bottom */
-    box-sizing: border-box; /* Ensures padding is included in the width */
+  background-color: rgba(1, 62, 94, 1);
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100vw; /* Ensure it takes the full width of the viewport */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of items on smaller screens */
+  justify-content: space-between; /* Spread sections out */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Footer heading styles */
+.footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Footer paragraph styles */
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Ensure each section takes equal space in the footer */
+.footer > div {
+  flex: 1;
+  min-width: 200px; /* Prevent sections from becoming too small */
+  margin-right: 20px; /* Space between sections */
+}
+
+.footer > div:last-child {
+  margin-right: 0; /* Remove margin for the last section */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 14px;
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: center; /* Center the content */
+    text-align: center; /* Center the text */
   }
-  
-  /* Footer paragraph links */
+
+  .footer > div {
+    min-width: 100%; /* Make each section full-width */
+    margin-right: 0;
+    margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .footer > div:last-child {
+    margin-bottom: 0; /* Remove margin for the last section */
+  }
+}
+
+/* Media query for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+
   .footer p {
-    margin: 5px 50px; /* Adjust margin for better layout */
+    margin: 5px 10px;
+    word-wrap: break-word; /* Ensure text doesn't overflow */
   }
-  
-  .page-container > .main-content {
-    flex-grow: 1; /* Main content takes up the remaining space */
-  }
-  
-  /* Media query for smaller screens */
-  @media (max-width: 768px) {
-    .footer {
-      padding: 15px;
-      font-size: 14px;
-    }
-  
-    .footer p {
-      margin: 5px 20px;
-    }
-  }
-  
-  /* Media query for very small screens (e.g., phones) */
-  @media (max-width: 480px) {
-    .footer {
-      padding: 10px;
-      font-size: 12px;
-    }
-  
-    .footer p {
-      margin: 5px 10px;
-      word-wrap: break-word; /* Ensure text doesn't overflow */
-    }
-  }
-  
+}

@@ -1,38 +1,138 @@
-.home-container {
-    font-family: Arial, sans-serif;
-  }
-  
+.Home-Page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  .main-content {
-    padding: 20px;
-  }
-  
-  .hero {
-    text-align: center;
-    margin-bottom: 40px;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 90px 20px;
-  }
-  
-  .hero h1 {
-    font-size: 2.5em;
-  }
-  
-  .events {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .event {
-    flex: 1 1 calc(33.333% - 20px);
+.Home-Page .top-rectangle {
+  width: 100%;
+  height: 100px;
+}
 
-    padding: 10px;
-    text-align: center;
+.Home-Page .bottom-rectangle {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Home-Top{
+  width: 100%;
+  height: 550px;
+  display: flex;
+  background-color: rgba(1, 62, 94, 1);
+}
+
+
+.Home-Body-1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.image-container {
+  position: relative; /* Establishes a relative positioning context */
+}
+
+.image1 {
+  width: 3000px;
+  height: 300px;
+  border-radius: 10px; /* Optional: rounded corners for image 1 */
+  margin-left: 40px;
+}
+
+.image2 {
+  position: absolute;
+  top: 50%; /* Move Image2 to the center vertically of Image1 */
+  left: 50%; /* Move Image2 to the center horizontally of Image1 */
+  transform: translate(-50%, -50%); /* Adjust position by 50% of Image2's size */
+  width: 150px; /* Size of Image2 */
+  height: 150px; /* Size of Image2 */
+  border-radius: 10px; /* Optional: rounded corners for image 2 */
+}
+
+.text-container {
+  margin-left: 20px; /* Space between the images and the text */
+}
+
+
+
+.Home-Body-1 h1 {
+  color: black;
+  font-size: 2rem;
+}
+.Home-Body-1 h5 {
+  color: black;
+}
+
+.Home-Body-2 h1 {
+  color: black;
+  font-size: 2rem;
+}
+
+.Home-Body-2 h5 {
+  color: black;
+}
+
+.Home-Body-2 {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add padding if necessary */
+}
+
+.Home-Body-2 h1 {
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: 600;
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.Home-Body-2 h5 {
+  font-size: 1.2rem; /* Adjust size for h5 */
+  color: #555; /* Lighter color for subheadings */
+  margin-bottom: 5px; /* Add spacing between each line */
+}
+
+@media (max-width: 768px) {
+  .Home-Body-2 h1 {
+    font-size: 1.5rem; /* Reduce heading size for smaller screens */
   }
-  
-  .event img {
-    max-width: 100%;
-    height: auto;
+
+  .Home-Body-2 h5 {
+    font-size: 1rem; /* Adjust subheading size for smaller screens */
   }
+}
+
+
+.Home-Body-3 {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  gap: 140px; /* Add space between images */
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.display-1, .display-2, .display-3 {
+  width: 350px; /* Set width of images */
+  height: 400px; /* Set height of images */
+  border-radius: 15px; /* Optional: rounded corners for the borders */
+}
+
+/* Responsive Design: Stack images on smaller screens */
+@media (max-width: 768px) {
+  .Home-Body-3 {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+    align-items: center; /* Center images vertically */
+  }
+
+  .display-1, .display-2, .display-3 {
+    width: 250px;
+    height: 250px;
+  }
+}
