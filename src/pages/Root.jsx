@@ -1,18 +1,21 @@
-import Footer from '/src/components/Footer';
-import Page from '/src/pages/Sample';
-import Contact from '/src/pages/Contact'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Live from './Live';
+import About from './About';
+import Contact from './Contact';
+import Event from './Event';
 
 function Root() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/live" element={<Live />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/event" element={<Event />} />
+    </Routes>
   );
 }
 
-export default Root
+export default Root;

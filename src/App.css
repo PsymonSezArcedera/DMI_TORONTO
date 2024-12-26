@@ -1,19 +1,24 @@
-/* Ensure the entire body takes full height */
+/* Ensure the app uses flexbox for layout */
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  /* Full viewport height */
-  background-color: #fff;  /* White background */
+  min-height: 100vh;
+  background-color: #fff;
 }
 
-.App {
+.app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  /* Ensure footer stays at the bottom */
+  min-height: 100vh;
 }
 
-.main-content {
-  flex-grow: 1;  /* Allow main content to take up remaining space */
-  padding: 20px;
+.content {
+  flex: 1; /* Takes up remaining space between header and footer */
+}
+
+main {
+  padding: 20px; /* Add some padding around main content */
 }

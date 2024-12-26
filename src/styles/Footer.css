@@ -1,50 +1,98 @@
-/* Footer styles */
 .footer {
-    background-color: #000;
-    color: #fff;
-    text-align: left;
-    padding: 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-    width: 100vw; /* Ensure it takes the full width of the viewport */
-    position: relative;  /* Keeps footer within content flow */
-    left: 0; /* Aligns it to the left edge */
-    bottom: 0; /* Push it to the bottom */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-  }
-  
-  /* Footer paragraph links */
-  .footer p {
-    margin: 5px 50px; /* Adjust margin for better layout */
-  }
-  
-  .page-container > .main-content {
-    flex-grow: 1; /* Main content takes up the remaining space */
-  }
-  
-  /* Media query for smaller screens */
-  @media (max-width: 768px) {
-    .footer {
-      padding: 15px;
-      font-size: 14px;
-    }
-  
-    .footer p {
-      margin: 5px 20px;
-    }
-  }
-  
-  /* Media query for very small screens (e.g., phones) */
-  @media (max-width: 480px) {
-    .footer {
-      padding: 10px;
-      font-size: 12px;
-    }
-  
-    .footer p {
-      margin: 5px 10px;
-      word-wrap: break-word; /* Ensure text doesn't overflow */
-    }
-  }
-  
+  display: flex;
+
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  background-color: #013E5E; /* Footer background color */
+
+  width: 100vw; /* Ensure it takes the full width of the viewport */
+  position: relative;  /* Keeps footer within content flow */
+  left: 0; /* Aligns it to the left edge */
+  bottom: 0; /* Push it to the bottom */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+
+
+.footer-section {
+  flex: 1; /* Make each section take up equal space */
+  min-width: 200px; /* Set a minimum width to prevent them from being too small */
+  text-align: left; /* Ensure the text inside each section is left-aligned */
+  padding: 10px;
+  margin: 40px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: normal;
+}
+
+
+.footer-section {
+  flex: 1; /* Make each section take up equal space */
+  min-width: 200px; /* Set a minimum width to prevent them from being too small */
+  text-align: left; /* Ensure the text inside each section is left-aligned */
+  padding: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: normal;
+}
+
+.footer-logo .logo {
+  padding-left: 0;
+  height: 50px;
+  padding-top: 25px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+  margin-bottom: 5px; /* Adds space between the items */
+  text-decoration: none;
+}
+
+.social-icon {
+  padding-left: 0px;
+  margin-left: 0px;
+  height: 30px;
+}
+
+
+.social-text {
+  font-size: 14px;
+  color: #fff;
+  line-height: 2;
+  padding-left: 10px;
+}
+
+.social-link:hover .social-text {
+  text-decoration: underline; /* Add underline effect on hover */
+}

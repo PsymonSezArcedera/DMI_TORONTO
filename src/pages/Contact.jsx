@@ -7,11 +7,9 @@ import Newsletter from "../components/Newsletter";
 function Contact() {
   return (
     <div>
-      <div className="contact-page">
 
-        <div className="top-rectangle">
-          <MainHeader />
-        </div>
+
+      <div className="contact-page">
 
         <div className="contact-left">
           <h1>GIVE US A CALL:</h1>
@@ -55,7 +53,7 @@ function Contact() {
         </div>
         
       </div>
-      <Footer />
+
     </div>
   );
 }

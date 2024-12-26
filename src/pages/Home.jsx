@@ -13,10 +13,11 @@ import MainHeader from '../components/Header';
 
 function Home() {
   return (
+    <div>
+
     <div className="home-container">
 
       <section className="hero" style={{ backgroundImage: `url(${banner})` }}>
-        <MainHeader />
         <h1>JOIN US IN SPREADING GOD’S WORD</h1>
       </section>
 
@@ -39,8 +40,9 @@ function Home() {
         </section>
       </main>
       
-      <Footer />
     </div>
+    </div>
+
   );
 }
 

@@ -1,19 +1,61 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: white;
-  }
-  
-  .logo {
-    height: 50px;
-  }
-  
-  .nav a {
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    margin: 0 20px;
-    padding: 10px;
-  }
+  position: fixed; /* Fix the header at the top */
+  top: 0; /* Align it to the top of the viewport */
+  left: 0; /* Align it to the left of the viewport */
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  z-index: 1000; /* Keep it above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Header background color */
+  color: #345766;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  overflow-x: hidden; /* Prevent overflow on the X-axis */
+}
+
+.logo {
+  height: 60px; /* Adjust the height to fit your layout */
+  padding-left: 60px;
+}
+
+.nav {
+  display: flex;
+  gap: 50px; /* Adjust spacing between links */
+  padding-right: 150px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #345766;
+  font-size: 16px;
+  position: relative;
+  padding: 5px 0; /* Adds some spacing for the line effect */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #FFD700; /* Highlight color on hover */
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #FFD700; /* Line color */
+  transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after,
+.nav a:focus::after {
+  width: 100%;
+}
+
+.nav a.active::after {
+  width: 100%;
+  background-color: #FFD700; /* Line color for active link */
+}
