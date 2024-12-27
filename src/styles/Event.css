@@ -1,0 +1,13 @@
+.like{
+    background-color: rgba(188, 151, 112, 1);
+    border-radius: 60%;
+    color: black;
+    margin-left: -110px;
+}
+
+.share{
+    background-color: rgba(188, 151, 112, 1);
+    color: black;
+    border-radius: 60%;
+}
+
