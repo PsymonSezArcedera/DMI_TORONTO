@@ -21,14 +21,14 @@ function Contact() {
         <div className="contact-left">
           <h1>Get in Touch</h1>
           <div className="contact-info">
-
-            <h2>Email:</h2>
-            <p><a href="mailto:dmi@gmail.com">dmi@gmail.com</a></p>
+            <p>Reach out to us via email or connect with us on social media. We're here to assist you with any support you may need!</p>
+            <h2>Email</h2>
+            <a href="mailto:dmi@gmail.com">dmi@gmail.com</a>
 
             <h2>Phone:</h2>
-            <p><a href="tel:+14167313113">+1 416-731-3113</a></p>
+            <a href="tel:+14167313113">+1 416-731-3113</a>
 
-            <h2>Facebook:</h2>
+            <h2>Facebook</h2>
             <a 
               href="https://www.facebook.com/DMIToronto" 
               target="_blank" 
@@ -37,7 +37,7 @@ function Contact() {
               Destiny Toronto
             </a>
 
-            <h2>YouTube:</h2>
+            <h2>YouTube</h2>
             <a 
               href="https://www.youtube.com/DMI" 
               target="_blank" 
@@ -46,15 +46,6 @@ function Contact() {
               www.youtube.com/DMI
             </a>
 
-            <h2>Address:</h2>
-            <a
-              href="https://www.google.com/maps?q=1530+Birchmount+Rd+Unit+7,+Toronto,+ON,+Canada,+M1P+2G9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="address-link"
-            >
-              1530 Birchmount #7, Toronto, ON, Canada, M1P 2G9
-            </a>
           </div>
         </div>
 

@@ -29,7 +29,7 @@ function Newsletter() {
 
   return (
     <div className="news-letter">
-      <h2>Subscribe to our Newsletter</h2>
+      <h1>Subscribe to our Newsletter</h1>
       <form onSubmit={handleSubmit} className="newsletter-form">
         <input
           type="email"
