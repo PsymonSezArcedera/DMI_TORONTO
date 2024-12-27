@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import '/src/styles/Newsletter.css';
+
+import send from '/src/assets/icon_send_black.png'
 
 function Newsletter() {
   const [email, setEmail] = useState("");
@@ -29,17 +32,27 @@ function Newsletter() {
 
   return (
     <div className="news-letter">
-      <h1>Subscribe to our Newsletter</h1>
-      <form onSubmit={handleSubmit} className="newsletter-form">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <button type="submit">Subscribe</button>
-      </form>
+      <div className="news-letter-content">
+
+        <form onSubmit={handleSubmit} className="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <button type="submit" className="icon-button">
+            <img src={send} alt="Subscribe" className="button-image" />
+          </button>
+        </form>
+
+        <div className="text-content">
+          <h1>Our Newsletter</h1>
+          <p>Join our community and receive inspiring messages, upcoming event details, and ways to grow in faith. Stay connected with us and be part of our journey.</p>
+        </div>
+
+      </div>
 
       {/* Modal */}
       {showModal && (

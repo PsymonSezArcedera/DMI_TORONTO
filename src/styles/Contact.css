@@ -62,14 +62,28 @@
 .contact-header p,
 .contact-page p {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
   max-width: 800px;
   margin: 0 auto; /* Centers the paragraph */
   line-height: 1.5;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.map-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #555;
+  max-width: 800px;
+  margin: 20px auto 150px; /* Center horizontally and add bottom margin */
+  margin-top: 80px;
   padding-left: 50px;
   padding-right: 50px;
+  text-align: center; /* Centers the text */
+  line-height: 1.6; /* Improves readability */
 }
+
 
 .contact-left h1 {
   margin-bottom: 20px;
@@ -132,81 +146,65 @@
 }
 
 
-/* Contact Info Section */
-.contact-info h2 {
-  font-size: 18px;
-  margin-bottom: 0;
-  color: #345766;
-}
 
-.contact-info a {
-  color: #345766;
+
+/* Remove underline from the anchor tag itself */
+.social-link {
   text-decoration: none;
-  position: relative; /* Required for ::after positioning */
-  transition: color 0.3s ease-in-out; /* Smooth color transition */
-}
-
-.contact-info a:hover,
-.contact-info a:focus {
-  color: #FFD700; /* Highlight color on hover */
-}
-
-.contact-info a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px; /* Adjust line placement */
-  left: 0;
-  height: 2px;
-  width: 0; /* Initially hidden */
-  background-color: #FFD700; /* Line color */
-  transition: width 0.3s ease-in-out; /* Smooth width transition */
-}
-
-.contact-info a:hover::after,
-.contact-info a:focus::after {
-  width: 100%; /* Full line on hover */
-}
-
-
-
-/* Newsletter Section */
-.news-letter h1 {
   display: flex;
-  justify-content: center;
-  color: #000;
-  font-size: 20px;
-}
-
-.newsletter-form {
-  display: flex;
-  justify-content: center; /* Centers the form */
   align-items: center;
-  gap: 10px; /* Adjusts spacing between input and button */
-  margin-top: 40px;
-  flex-wrap: wrap; /* Ensures responsiveness */
 }
 
-.newsletter-form input {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #345766;
-  border-radius: 5px;
-  background-color: #fff;
+
+/* Style for the text inside the anchor */
+.contact-info .social-text {
+  display: flex;
+  flex-direction: column;
+  color: #000;
 }
 
-.newsletter-form button {
-  padding: 10px 15px;
-  background-color: #ffffff;
-  color: #345766;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
+.social-title {
+  margin-top: 10px;
+  font-weight: bold; /* Bold text */
+  font-size: 16px;
+  text-decoration: none; /* Ensure bold text is not underlined */
+  margin-bottom: 0px; /* Adjust the margin between title and subtext */
 }
 
-.newsletter-form button:hover {
-  background-color: #2a4a5b;
+/* Ensure no underline on the subtext */
+.social-subtext a{
+  font-weight: normal; /* Normal weight text */
+  text-decoration: none; /* Ensure normal text is not underlined by default */
+  margin-top: 0; /* Remove any default margin from the top */
+  color: #000;
 }
+
+/* Make sure only the link text has hover effects */
+.social-subtext a:hover {
+  color: #FFD700; /* Highlight color on hover */
+  text-decoration: none; /* Prevent underline on hover */
+}
+
+/* Adjust padding and margin of the icon */
+.social-icon {
+  padding-left: 20px;
+  margin-left: 0px;
+  height: 30px;
+}
+
+/* Ensure the hover area only includes the clickable link */
+.contact-info a {
+  margin-top: 25px;
+}
+
+.contact-info p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

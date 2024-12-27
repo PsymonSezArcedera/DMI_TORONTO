@@ -1,0 +1,172 @@
+/* Container for the newsletter */
+.news-letter {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #f5f5f3;
+    padding: 100px;
+    margin-top: 80px;
+}
+
+/* Flex container to align the elements side by side */
+.news-letter-content {
+    display: flex;
+    justify-content: center; /* Space between text and form */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 80px;
+}
+
+/* Styling for text content (heading and paragraph) */
+.text-content {
+    flex: 1;
+    max-width: 30%; /* Ensure the text takes up half the space */
+    margin-right: 20px; /* Space between the text and the form */
+}
+
+/* Heading style */
+.news-letter h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: left;
+}
+
+/* Paragraph styling */
+.news-letter p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Form styling */
+.newsletter-form {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    background-color: #fff;
+    padding: 30px;
+    flex: 1;
+    max-width: 30%; /* Limits the section width */
+    border-radius: 50px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+
+/* Input field */
+.newsletter-form input {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%; /* Makes the input responsive */
+    max-width: 250px; /* Limits max width */
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    text-align: left; /* Centers the input text */
+    color: #000000;
+}
+
+/* Focus state for input */
+.newsletter-form input:focus {
+    border-color: #ffffff;
+}
+
+/* Button styling with image */
+.newsletter-form button {
+    padding: 0;
+    background-color: transparent; /* Make background transparent */
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    width: 50px; /* Adjust button size */
+    height: 50px; /* Adjust button size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Image inside button */
+  .button-image {
+    width: 100%; /* Ensure the image fills the button */
+    height: 100%; /* Ensure the image fills the button */
+    object-fit: contain; /* Makes sure the image scales correctly */
+  }
+  
+  /* Button hover effect */
+  .newsletter-form button:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+  }
+  
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Hover effect for close button */
+.close-button:hover {
+    color: #333;
+}
+
+/* Modal message */
+.modal h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .news-letter-content {
+        flex-direction: column; /* Stack the content vertically on small screens */
+        align-items: center;
+    }
+
+    .text-content {
+        margin-right: 0;
+        text-align: center; /* Center align text on small screens */
+    }
+
+    .newsletter-form {
+        width: 100%; /* Form takes full width on smaller screens */
+    }
+
+    .newsletter-form input, .newsletter-form button {
+        max-width: 100%;
+    }
+}
