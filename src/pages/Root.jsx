@@ -5,6 +5,7 @@ import Live from './Live';
 import About from './About';
 import Contact from './Contact';
 import Event from './Event';
+import Article from './Articles/Article1';
 
 function Root() {
   return (
@@ -14,6 +15,7 @@ function Root() {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/event" element={<Event />} />
+      <Route path="/article" element={<Article />} />
     </Routes>
   );
 }

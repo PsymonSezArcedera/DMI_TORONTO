@@ -1,0 +1,62 @@
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Gap between items */
+    justify-content: center; /* Center the grid */
+    margin: 140px 20px; /* Add more space at the top by increasing the top margin */
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin-bottom: 10px; /* Add spacing between image and title */
+}
+
+.event-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.event-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px; /* Space between buttons */
+}
+
+.read-article-button, .share-button {
+    padding: 8px 12px;
+    background-color: rgba(188, 151, 112, 1);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+    object-fit: cover;
+  }
+  
+.event-title {
+    align-self: flex-start; /* Align title to the left */
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 25px; /* Make the title slightly bigger */
+    font-weight: bold;
+    color: black; /* Set the color to black */
+}
