@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 50px;
 }
 
 .Home-Body-1 h2{
@@ -76,13 +77,15 @@
 .image1{
 margin-left: 10%;
 margin-top: 100px;
-border-radius: 15px; 
+border-radius: 15px;
+object-fit: cover;  
 }
 
 .image2{
   margin-top: -250px;
   margin-left: 35%;
   border-radius: 15px; 
+  object-fit: cover;  
 }
 
 
@@ -134,13 +137,14 @@ border-radius: 15px;
 }
 
 .about-us-button:hover {
-  background-color: #0C70B0; /* Button hover effect */
+  background-color: rgba(188, 151, 112, 1); /* Button hover effect */
 }
 
 
 .Home-Body-2 h1 {
   color: black;
   font-size: 2rem;
+  margin-bottom: 1000px;
 }
 
 .Home-Body-2 h5 {
@@ -202,6 +206,7 @@ border-radius: 15px;
   width: 350px; /* Set width of images */
   height: 400px; /* Set height of images */
   border-radius: 15px; /* Optional: rounded corners for the borders */
+  margin-bottom: -100px;
 }
 
 /* Responsive Design: Stack images on smaller screens */
@@ -216,3 +221,34 @@ border-radius: 15px;
     height: 250px;
   }
 }
+
+.display-1, .display-2, .display-3 {
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+
+.Home-Body-2 h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 35px;
+  margin-bottom: 10px; /* Reduce spacing below the heading */
+  max-width: 80%;
+  line-height: 1.2; /* Adjust line spacing for the heading */
+}
+
+.Home-Body-2 h5 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: -15px; /* Reduce spacing below this subheading */
+  line-height: 1.2; /* Adjust line spacing */
+}
+
+.Home-Body-2 h4 {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 65px; /* Remove spacing below this element */
+  line-height: 1.2; /* Adjust line spacing */
+}
+
+

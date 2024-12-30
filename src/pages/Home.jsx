@@ -5,11 +5,11 @@ import image2 from '/src/assets/Image2.jpg'
 import image3 from '/src/assets/Image3.jpg' 
 import image4 from '/src/assets/Image4.jpg' 
 import image5 from '/src/assets/Image5.jpg' 
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Footer from '../components/Footer';
-import MainHeader from '../components/Header';
+import { useNavigate } from 'react-router-dom'; 
+//import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div className="Home-Page">
 
@@ -35,7 +35,9 @@ function Home() {
   <h5>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   </h5>
-  <button className="about-us-button">About Us</button>
+  <button className="about-us-button" onClick={() => navigate('/about')}>
+      About Us
+    </button>
 </div>
 </div>
 
@@ -51,6 +53,7 @@ function Home() {
       <img className = "display-2" src={image4} alt="Description of image" width="300" height="300"/>
       <img className = "display-3" src={image5} alt="Description of image" width="300" height="300"/>
       </div>
+
 
 
     </div>
