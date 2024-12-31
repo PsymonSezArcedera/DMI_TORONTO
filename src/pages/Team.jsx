@@ -6,12 +6,19 @@ import image4 from "/src/assets/Pastor4.png";
 import image5 from "/src/assets/Pastor5.png";
 import image6 from "/src/assets/Pastor6.png";
 import "/src/styles/Team.css";
-import About from "/src/components/About.jsx"
+import About from "/src/components/About.jsx";
 
 function Team() {
   return (
     <div>
-      <About/>
+      <About />
+      <h1 className="team-title">MEET THE DMI FAMILY</h1>
+        <p className="team-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
       <div className="team-grid">
         <div className="team-member">
           <img className="image1" src={image1} alt="Description of image" />

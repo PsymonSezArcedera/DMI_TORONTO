@@ -12,14 +12,12 @@ function Home() {
   return (
     <div className="Home-Page">
 
-
       <div className="Home-Top">
         <div className="Home-Top-Text">
           <h1>GOD.</h1>
           <h1>FAMILY. NATIONS.</h1>
         </div>
       </div>
-
 
       <div className="Home-Body-1">
         <div className="image-container">
