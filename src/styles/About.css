@@ -1,0 +1,23 @@
+.about{
+    background-color: #013e5e;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 200px;  
+}
+
+.history{
+    background: none;
+    margin-top: 10%;
+}
+
+.team{
+    background: none;
+    margin-top: 10%;
+}

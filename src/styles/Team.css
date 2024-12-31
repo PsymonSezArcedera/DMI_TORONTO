@@ -1,0 +1,34 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0%;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 5%; 
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member .image1 {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member h2 {
+  color: black;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.team-member h1 {
+  color: gray;
+  font-size: 1rem;
+  margin: 5px 0;
+}

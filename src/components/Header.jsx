@@ -10,7 +10,7 @@ function MainHeader(){
         <nav className="nav">
             <Link to="/">Home</Link>
             <Link to="/live">Live</Link>
-            <Link to="/about">About Us</Link>
+            <Link to="/history">About Us</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/event">Event</Link>
         </nav>

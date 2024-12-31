@@ -4,27 +4,13 @@
   min-height: 100vh;
 }
 
-.Home-Page .top-rectangle {
-  width: 100%;
-  height: 100px;
-}
-
-.Home-Page .bottom-rectangle {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 .Home-Top {
   width: 100%;
   height: 550px;
   display: flex; /* Enables flexbox */
   align-items: center; /* Vertically center content */
   background-color: rgba(1, 62, 94, 1);
+  border-radius: 15px;
 }
 
 .Home-Top-Text {
@@ -40,89 +26,70 @@
   font-size: 7rem; /* Adjust as needed */
 }
 
+
+/*HOME BODY 1*/
 .Home-Body-1 {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 0%;
 }
+.image-container .image1{
+  margin-left: 30%;
+  margin-top: 30%;
+  border-radius: 15px;
+  object-fit: cover; 
+  }
 
-.Home-Body-1 h2{
-  color: rgba(1, 62, 94, 1);
-  font-size: 7rem;
-  /* margin-bottom: -230px; */
-  margin-top: 40px;
-  margin-left: 58%;
-  position: absolute;
-}
-
-.Home-Body-1 h3{
-  color: rgba(1, 62, 94, 1);
-  font-size: 1.5rem;
-  margin-top: 170px;
+.image-container .image2{
   margin-left: 75%;
-  position: absolute;
-}
-
-.Home-Top h2 {
-  color: rgba(1, 62, 94, 1); /* Optional: set text color for visibility */
-  margin: 0; /* Removes default margin */
-  font-size: 7rem; /* Adjust as needed */
-}
-
-.image-container {
-  position: relative; /* Establishes a relative positioning context */
-}
-
-.image1{
-margin-left: 10%;
-margin-top: 100px;
-border-radius: 15px;
-object-fit: cover;  
-}
-
-.image2{
-  margin-top: -250px;
-  margin-left: 35%;
+  margin-top: -60%;
   border-radius: 15px; 
   object-fit: cover;  
 }
 
+.image-container h2{
+  color: rgba(1, 62, 94, 1);
+  font-size: 7rem;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 125%;
+}
+
+.image-container h3{
+  color: rgba(1, 62, 94, 1);
+  font-size: 1.4rem;
+  position: absolute;
+  margin-top: 53%;
+  margin-left: 170%;
+}
 
 .text-container {
   margin-left: 5%; /* Space between the images and the text */
-  max-width: 510px;
+  align-items:  flex-end;
 } 
 
 .text-container h2{
   font-size: 1.5rem;
   color: #013e5e;
-  margin-top: -10px;
-  margin-left: 0px;
-  /* position: absolute; */
+  margin-top: 14%;
+  margin-left: 43%;
 } 
 
-
 .text-container h1 {
-  font-size: 4rem; /* Adjusted size for better readability */
-  margin-bottom: 20px; /* Adds spacing below the heading */
-  color: #013e5e; /* Dark blue color for the heading */
+  font-size: 4rem; 
+  margin-top: -2%;
+  margin-left: 43%;
+  color: #000000; 
 }
 
 .text-container h5 {
-  font-size: 1rem; /* Font size for descriptive text */
-  line-height: 1.5; /* Improves readability with proper line spacing */
-  color: #666666; /* Soft gray color for the paragraph */
-  text-align: justify; /* Aligns the text for a cleaner look */
-}
-
-
-.Home-Body-1 h1 {
-  color: black;
-  font-size: 4rem;
-}
-.Home-Body-1 h5 {
-  color: black;
+  font-size: 1rem;
+  font-weight: 200; 
+  line-height: 1.5;
+  color: #000000;
+  text-align: justify;
+  margin-top: -1%;
+  margin-left: 43%;
+  max-width: 50%;
 }
 
 .about-us-button {
@@ -134,23 +101,15 @@ object-fit: cover;
   border-radius: 35px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 1%;
+  margin-left: 44%;
 }
 
 .about-us-button:hover {
   background-color: rgba(188, 151, 112, 1); /* Button hover effect */
 }
 
-
-.Home-Body-2 h1 {
-  color: black;
-  font-size: 2rem;
-  margin-bottom: 1000px;
-}
-
-.Home-Body-2 h5 {
-  color: black;
-}
-
+/* HOME BODY 2*/
 .Home-Body-2 {
   display: flex;
   flex-direction: column; /* Stack the elements vertically */
@@ -158,6 +117,7 @@ object-fit: cover;
   justify-content: center; /* Center the content vertically */
   text-align: center; /* Center the text */
   padding: 20px; /* Add padding if necessary */
+  margin-top: 300px;
 }
 
 .Home-Body-2 h1 {
@@ -166,19 +126,24 @@ object-fit: cover;
   color: #000000; /* Dark color for the heading */
   margin-bottom: 10px; /* Spacing below the heading */
   max-width: 80%;
+  line-height: 1.2;
 }
 
 .Home-Body-2 h5 {
   font-size: 1.2rem; /* Adjust size for h5 */
   color: #555; /* Lighter color for subheadings */
   margin-bottom: 5px; /* Add spacing between each line */
+  line-height: 1.2; 
+  margin-bottom: -15px; 
 }
 
 
 .Home-Body-2 h4 {
   font-size: 1.2rem; /* Adjust size for h5 */
-  color: #000000; /* Lighter color for subheadings */
+  line-height: 1.2; 
+  color: #000000; 
   margin-bottom: 5px; /* Add spacing between each line */
+  margin-bottom: 65px;
 }
 
 
@@ -225,30 +190,3 @@ object-fit: cover;
 .display-1, .display-2, .display-3 {
   object-fit: cover; /* Ensure the image covers the container */
 }
-
-
-.Home-Body-2 h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  color: #000000;
-  margin-top: 35px;
-  margin-bottom: 10px; /* Reduce spacing below the heading */
-  max-width: 80%;
-  line-height: 1.2; /* Adjust line spacing for the heading */
-}
-
-.Home-Body-2 h5 {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: -15px; /* Reduce spacing below this subheading */
-  line-height: 1.2; /* Adjust line spacing */
-}
-
-.Home-Body-2 h4 {
-  font-size: 1.2rem;
-  color: #000000;
-  margin-bottom: 65px; /* Remove spacing below this element */
-  line-height: 1.2; /* Adjust line spacing */
-}
-
-

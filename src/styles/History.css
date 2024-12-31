@@ -1,0 +1,44 @@
+.history-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; /* Separate rows for title and content */
+    gap: 4%; /* Space between grid items */
+    align-items: center; 
+    margin-top: 2%;
+    grid-template-areas: 
+        "image title"         /* Title next to image */
+        "image description";  /* Image and description in alternating layout */
+}
+
+.history-item:nth-child(even) {
+    grid-template-areas: 
+        "title image"         /* Title next to image for even items */
+        "description image";  /* Switch description and image for even items */
+}
+
+
+.history-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    object-fit: cover;
+    grid-area: image; /* Place the image in the image area */
+}
+
+.history-item h2 {
+    grid-area: title; /* Place the title above the description */
+    font-size: 24px; 
+    color: #333; 
+    font-weight: bold; 
+    margin-bottom: 2px; /* Minimal space between title and description */
+    text-align: left;
+}
+
+.history-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; 
+    grid-area: description; /* Place the description below the title */
+    text-align: justify;
+    
+}
