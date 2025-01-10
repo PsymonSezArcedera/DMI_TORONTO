@@ -5,19 +5,63 @@ import image2 from '/src/assets/Image2.jpg'
 import image3 from '/src/assets/Image3.jpg'
 import image4 from '/src/assets/Image4.jpg'
 import image5 from '/src/assets/Image5.jpg'
+
+import slider1 from '/src/assets/Slider1.png'
+
+import slider2 from '/src/assets/Slider2.png'
+
+import slider3 from '/src/assets/Slider3.png'
+
+import slider4 from '/src/assets/Slider4.png'
+
 import { useNavigate } from 'react-router-dom';
+
 
 function Home() {
   const navigate = useNavigate();
+
   return (
     <div className="Home-Page">
-
-      <div className="Home-Top">
-        <div className="Home-Top-Text">
-          <h1>GOD.</h1>
-          <h1>FAMILY. NATIONS.</h1>
+      <div className="carousel">
+        <div className="list">
+          {[slider1, slider2, slider3, slider4].map((slider, index) => (
+            <div className="item" key={index}>
+              <img src={slider} alt={`Slider ${index + 1}`} />
+              <div className="content">
+                <div className="author">LAUNDEV</div>
+                <div className="title">DESIGN SLIDERS</div>
+                <div className="topic">ANIMAL</div>
+                <div className="des">
+                  Here at Destiny Ministry International, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div className="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="thumbnail">
+          {[slider1, slider2, slider3, slider4].map((slider, index) => (
+            <div className="item" key={index}>
+              <img src={slider} alt={`Thumbnail ${index + 1}`} />
+              <div className="content">
+                <div className="title">Name Slider</div>
+                <div className="des">Description</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="arrows">
+          <button className="prev">{'<'}</button>
+          <button className="next">{'>'}</button>
         </div>
       </div>
+
+
+
+
 
       <div className="Home-Body-1">
         <div className="image-container">

@@ -45,6 +45,7 @@ function Event() {
     { id: 4, title: "Article 4", link: "http://localhost:5173/article", image: image4 },
     { id: 5, title: "Article 5", link: "http://localhost:5173/article", image: image5 },
     { id: 6, title: "Article 6", link: "http://localhost:5173/article", image: image6 },
+    
   ];
 
   const navigateToArticle = (link) => {
@@ -60,7 +61,17 @@ function Event() {
   };
 
   return (
+    <div>
+        <h1 className="archive-title">DMI Archives</h1>
+        <p className="archive-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+    
     <div className="event-container">
+      
       {articles.map((article) => (
         <EventCard
           key={article.id}
@@ -71,6 +82,7 @@ function Event() {
           onShare={() => shareArticle(article.link)}
         />
       ))}
+    </div>
     </div>
   );
 }
