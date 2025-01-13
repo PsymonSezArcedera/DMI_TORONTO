@@ -1,72 +1,102 @@
+
+
+
+
 .event-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-    justify-content: center;
-    margin-top: 8%;
-    margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%; /* Reduced the gap between cards */
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .event-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(236, 230, 230); /* Set background color to gray */
+  border-radius: 15px; /* Set border radius to 15px */
+  padding: 10px 10px; /* Reduced padding to make the gray area smaller */
+}
+.event-card:hover .event-title {
+    color: white;
 }
 
-.image-container {
-    position: relative;
-    width: 400px;
-    height: 250px;
+.event-card:hover {
+    background-color: #013e5e;
+}
 
+
+
+.image-container {
+  position: relative;
+  width: 100%; /* Ensure image container takes up full width within the card */
+  height: 400px; 
 }
 
 .event-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; /* Ensure the image has a matching border radius */
+  object-fit: cover;
 }
 
 .event-buttons {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    gap: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
 }
 
 .read-article-button,
 .share-button {
-    padding: 6px 8px;
-    border-radius: 100%;
-    background-color: rgba(188, 151, 112, 1);
-    color: black;
+  padding: 6px 8px;
+  border-radius: 100%;
+  background-color: rgba(188, 151, 112, 1);
+  color: black;
 }
 
 .button-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
 }
 
 .event-title {
-    align-self: center;
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
+  align-self: start;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
 }
 
-.archive-title {
-    margin-top: 8%;
-    font-size: 2.5rem;
-    color: #013e5e;
-    text-align: center;  
+.event-date {
+    align-self: start;
+    margin-top: -5%;
+    font-size: 15px;
+    font-weight: 200;
+    color: gray
   }
   
-  .archive-description {
-    color: gray;
-    text-align: center;  
-    margin-left: 25%;
-    margin-right: 25%;
-  }
+
+
+.archive-title {
+  margin-top: 10%;
+  font-size: 2.5rem;
+  color: #013e5e;
+  text-align: center;  
+}
+
+.archive-description {
+  margin-top: -1%; /* Reduced top margin */
+  margin-bottom: 0%; /* Reduced bottom margin */
+  color: gray;
+  text-align: center;
+  margin-left: 35%; /* Reduced left margin */
+  margin-right: 35%; /* Reduced right margin */
+}
+
