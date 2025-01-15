@@ -7,6 +7,7 @@ import Map from "../components/Map"
 
 import facebook from '/src/assets/icon_facebook_black.png'
 import youtube from '/src/assets/icon_youtube_black.png'
+import spotify from '/src/assets/icon_spotify_black.png'
 import email from '/src/assets/icon_email_black.png'
 import phone from '/src/assets/icon_phone_black.png'
 
@@ -67,6 +68,16 @@ function Contact() {
               <span className="social-title">YouTube</span>
               <p className="social-subtext">
                 <a href="https://www.youtube.com">Destiny Toronto</a>
+              </p>
+            </div>
+          </div>
+
+          <div className="social-link">
+            <img src={spotify} alt="Spotify Icon" className="social-icon" />
+            <div className="social-text">
+              <span className="social-title">Spotify</span>
+              <p className="social-subtext">
+                <a href="https://open.spotify.com">Destiny Toronto</a>
               </p>
             </div>
           </div>
