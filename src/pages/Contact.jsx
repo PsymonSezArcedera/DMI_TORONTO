@@ -1,6 +1,7 @@
 import React from "react";
 import "/src/styles/Contact.css"; 
 
+import Donation from "../components/Donation";
 import Newsletter from "../components/Newsletter";
 import Map from "../components/Map"
 
@@ -109,6 +110,7 @@ function Contact() {
         </div>
       </div>
       
+      <Donation />
       <Newsletter />
       <Map />
       

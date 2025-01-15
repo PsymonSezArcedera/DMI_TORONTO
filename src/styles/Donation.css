@@ -1,0 +1,22 @@
+/* Container for the newsletter */
+.donation {
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 80px;
+}
+
+.donation h1 {
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.donation p {
+    color: #000000;
+}
+
+.qr-code-img {
+    height: 400px;
+    margin-bottom: 100px;
+}
