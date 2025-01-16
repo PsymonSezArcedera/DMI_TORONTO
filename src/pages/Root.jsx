@@ -7,6 +7,9 @@ import History from './History';
 import Team from './Team';
 import Event from './Event';
 import Article from './Articles/Article1';
+import AdminEvent from "./AdminEvent"; 
+
+
 
 function Root() {
   return (
@@ -18,6 +21,7 @@ function Root() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/event" element={<Event />} />
       <Route path="/article" element={<Article />} />
+      <Route path="/adminevent" element={<AdminEvent />} />
     </Routes>
   );
 }
