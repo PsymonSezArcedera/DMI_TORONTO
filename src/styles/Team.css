@@ -9,8 +9,24 @@
   margin-bottom: 5%;
 }
 
+.history-title {
+  margin-top: 7%;
+  font-size: 2.5rem;
+  color: #013e5e;
+  text-align: center;  
+}
+
+.team-section {
+  color: #013e5e;
+  text-align: center;  
+  border-radius: 30px; /* Rounded corners */
+background-color: #f5f5f3;
+padding: 80px;
+margin-top: 80px;
+
+}
+
 .team-title {
-  margin-top: 4%;
   font-size: 2.5rem;
   color: #013e5e;
   text-align: center;  
