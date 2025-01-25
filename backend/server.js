@@ -115,5 +115,64 @@ app.delete("/articles/:id", async (req, res) => {
   }
 });
 
+
+
+
+
+// Define Schemas for Slider Images and Content
+const sliderImageSchema = new mongoose.Schema({
+  image: String,
+});
+
+const contentSchema = new mongoose.Schema({
+  title: String,
+  description: String,
+  link: String,
+});
+
+// Create Models
+const SliderImage = mongoose.model("SliderImage", sliderImageSchema);
+const Content = mongoose.model("Content", contentSchema);
+
+// CRUD Routes for Slider Images
+app.get("/slider-images", async (req, res) => {
+  const sliderImages = await SliderImage.find();
+  res.json(sliderImages);
+});
+
+app.post("/slider-images", async (req, res) => {
+  const newSliderImage = new SliderImage(req.body);
+  await newSliderImage.save();
+  res.status(201).json(newSliderImage);
+});
+
+app.delete("/slider-images/:id", async (req, res) => {
+  await SliderImage.findByIdAndDelete(req.params.id);
+  res.status(204).send();
+});
+
+// CRUD Routes for Content
+app.get("/content", async (req, res) => {
+  const contentData = await Content.find();
+  res.json(contentData);
+});
+
+app.post("/content", async (req, res) => {
+  const newContent = new Content(req.body);
+  await newContent.save();
+  res.status(201).json(newContent);
+});
+
+app.delete("/content/:id", async (req, res) => {
+  await Content.findByIdAndDelete(req.params.id);
+  res.status(204).send();
+});
+
+
+
+
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
+

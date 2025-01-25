@@ -1,6 +1,3 @@
-
-
-
 import image1 from '/src/assets/Image1.jpg';
 import image2 from '/src/assets/Image2.jpg';
 import image3 from '/src/assets/Image3.jpg';
@@ -25,17 +22,18 @@ function Home() {
   
   // Fetch content data and slider images from the backend
   useEffect(() => {
-    axios.get('http://localhost:5001/slider-images')
+    // Fetch slider images and content data from the backend
+    axios.get("http://localhost:5001/slider-images")
       .then(response => setSliderImages(response.data))
-      .catch(error => console.error('Error fetching slider images:', error));
-    
-    axios.get('http://localhost:5001/content')
+      .catch(error => console.error("Error fetching slider images:", error));
+
+    axios.get("http://localhost:5001/content")
       .then(response => setContentData(response.data))
-      .catch(error => console.error('Error fetching content data:', error));
+      .catch(error => console.error("Error fetching content data:", error));
 
     const interval = setInterval(() => {
       setCarouselIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
-      setContentIndex((prevIndex) => (prevIndex + 1) % contentData.length); // Loop through content data
+      setContentIndex((prevIndex) => (prevIndex + 1) % contentData.length);
     }, 10000);
 
     return () => clearInterval(interval);
@@ -44,18 +42,24 @@ function Home() {
   const currentContent = contentData[contentIndex];
 
   return (
+  
     <div className="Home-Page">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+     
       <div className="Carousel">
         <img className="slider" src={sliderImages[carouselIndex]?.image} alt={`Slider ${carouselIndex + 1}`} />
         <div className="Carousel-text">
           <h2>{currentContent?.title}</h2>
           <h5>{currentContent?.description}</h5>
-          <button className="go-to-page" onClick={() => navigate(currentContent?.link)}>
+          <button onClick={() => navigate(currentContent?.link)}>
             Go to Page
           </button>
         </div>
       </div>
-
 
 
       {/* Home-Body-1 remains untouched */}

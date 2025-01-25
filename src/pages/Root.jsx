@@ -8,6 +8,7 @@ import Team from './Team';
 import Event from './Event';
 import Article from './Articles/Article1';
 import AdminEvent from "./AdminEvent"; 
+import AdminHome from "./AdminHome";
 
 
 
@@ -22,6 +23,7 @@ function Root() {
       <Route path="/event" element={<Event />} />
       <Route path="/article" element={<Article />} />
       <Route path="/adminevent" element={<AdminEvent />} />
+      <Route path="/adminhome" element={<AdminHome />} />
     </Routes>
   );
 }
